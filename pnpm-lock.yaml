@@ -8,6 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@vueuse/core':
+        specifier: ^10.11.1
+        version: 10.11.1(vue@3.4.37(typescript@5.5.4))
+      '@yume-chan/adb':
+        specifier: ^0.0.24
+        version: 0.0.24
+      '@yume-chan/adb-daemon-webusb':
+        specifier: ^0.0.24
+        version: 0.0.24
+      '@yume-chan/stream-extra':
+        specifier: ^0.0.24
+        version: 0.0.24
       vue:
         specifier: ^3.4.35
         version: 3.4.37(typescript@5.5.4)
@@ -15,15 +27,6 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.1.2
         version: 5.1.2(vite@5.4.0)(vue@3.4.37(typescript@5.5.4))
-      '@vueuse/core':
-        specifier: ^10.11.1
-        version: 10.11.1(vue@3.4.37(typescript@5.5.4))
-      '@yume-chan/adb':
-        specifier: ^0.0.24
-        version: 0.0.24
-      '@yume-chan/stream-extra':
-        specifier: ^0.0.24
-        version: 0.0.24
       naive-ui:
         specifier: ^2.39.0
         version: 2.39.0(vue@3.4.37(typescript@5.5.4))
@@ -339,6 +342,9 @@ packages:
   '@types/lodash@4.17.7':
     resolution: {integrity: sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==}
 
+  '@types/w3c-web-usb@1.0.10':
+    resolution: {integrity: sha512-CHgUI5kTc/QLMP8hODUHhge0D4vx+9UiAwIGiT0sTy/B2XpdX1U5rJt6JSISgr6ikRT7vxV9EVAFeYZqUnl1gQ==}
+
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
@@ -406,6 +412,9 @@ packages:
 
   '@vueuse/shared@10.11.1':
     resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
+
+  '@yume-chan/adb-daemon-webusb@0.0.24':
+    resolution: {integrity: sha512-Gz0eW2Cxarz/WMFFEUxbAICZ2yAkHNHetCInQnYl9qQ31sP8QSgsJ30Y9wloz62+fQqd2P2Eiw1qZoKYLjllqA==}
 
   '@yume-chan/adb@0.0.24':
     resolution: {integrity: sha512-Q9zg2gcht4YSKi1fXZFksWL3iyUPe4TQnuBcDNpZanIxaX/yKOoni3i6cWKsKHJm6xvmL+r96nzAO6C/a83CKg==}
@@ -986,6 +995,8 @@ snapshots:
 
   '@types/lodash@4.17.7': {}
 
+  '@types/w3c-web-usb@1.0.10': {}
+
   '@types/web-bluetooth@0.0.20': {}
 
   '@vitejs/plugin-vue@5.1.2(vite@5.4.0)(vue@3.4.37(typescript@5.5.4))':
@@ -1095,6 +1106,13 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@yume-chan/adb-daemon-webusb@0.0.24':
+    dependencies:
+      '@types/w3c-web-usb': 1.0.10
+      '@yume-chan/adb': 0.0.24
+      '@yume-chan/stream-extra': 0.0.24
+      '@yume-chan/struct': 0.0.24
 
   '@yume-chan/adb@0.0.24':
     dependencies:
